@@ -2,7 +2,7 @@
 use Phalcon\Di\FactoryDefault;
 
 error_reporting(E_ALL);
-
+ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 define('BASE_PATH', dirname(__DIR__));
 define('APP_PATH', BASE_PATH . '/app');
 
